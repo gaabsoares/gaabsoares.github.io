@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: rgb(255, 179, 128, .8);
+    background-color: rgb(255, 179, 128, .7);
 }
 
 a {
@@ -29,7 +29,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: .5rem 1.5rem;
-    background-color:rgb(106, 192, 230, .9);
+    background-color:rgb(106, 192, 230);
+}
+
+.mobile {
+    display: none;
 }
 
 .menu li {
@@ -43,7 +47,7 @@ header {
     align-items: center;
 }
 
-#signature {
+.signature {
     width: 15rem;
     height: auto;
     margin-left: -2rem;
@@ -55,6 +59,17 @@ header {
     margin-right: .75rem;
 }
 
+@media only screen and (max-width: 600px) {
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: flex;
+}
+
+}
+
 /* buttons and links */
 
 .menu {
@@ -63,9 +78,13 @@ header {
     transition: right .3s ease-in-out;
 }
 
-.menu:hover {
-    right: 0;
+.menu a {
+    transition: color .2s ease-in-out;
 }
+
+/* .menu:hover {
+    right: 0;
+} */
 
 .menu a:hover {
     color:orange;
@@ -75,11 +94,11 @@ header {
     color: darkorange;
 }
 
-#resume {
+.resume {
     text-decoration: none;
 }
 
-#resume button {
+.resume button {
     font-size: 1.2rem;
     padding: 1rem;
     background-color: orange;
@@ -90,23 +109,146 @@ header {
     cursor: pointer;
 }
 
-#resume button:hover {
+.resume button:hover {
     color: white;
     box-shadow: darkorange 7rem 0 0 0 inset;
 }
 
-#menu-button {
+.menu-button {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
 }
 
-#menu-button a {
-    cursor: default;
-}
-
-#menu-button img {
+.menu-button img {
     width: 4rem;
     height: auto;
     margin-bottom: -1.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: flex;
+}
+
+.mobile .menu {
+    right: 0;
+    top: -18rem;
+    margin-bottom: -16rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.mobile .menu:hover {
+    top: 3rem;
+    background-color:rgb(40, 134, 176);
+    margin-left: -1rem;
+    margin-top: -2.3rem;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
+    border: 2px solid rgb(0, 87, 142);
+}
+
+}
+
+/* main content */
+
+.subheader {
+    display: inline-flex;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: .25rem;
+}
+
+.number {
+    font-weight: bold;
+}
+
+.subtitle {
+    padding-left: 2rem;
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* intro */
+
+.main-content {
+    position: relative;
+    top: 8rem;
+    padding-left: 1rem;
+}
+
+.intro p {
+    padding: 5rem;
+    font-size: 1.5rem;
+    width: 50%;
+    line-height: 2.5rem;
+}
+
+.intro h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 0 5rem;
+    margin-top: -4rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.intro h2 {
+    color: darkblue;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    padding: 2rem 5rem;
+    font-size: 1.7rem;
+}
+
+#atom {
+    position: absolute;
+    z-index: -10;
+    top: -3rem;
+    left: 62rem;
+    width: 52rem;
+    height: auto;
+    opacity: .75;
+}
+
+#description {
+    background-color: rgb(173, 216, 230, .8);
+    padding: 2.5rem;
+    margin-left: 2.5rem;
+    text-align: justify;
+}
+
+/* about me */
+
+.about-me {
+    margin: 13rem 6rem;
+    display: flex;
+    background-color: rgb(173, 216, 230, .8);
+    padding: 2.5rem;
+}
+
+.profile-pic {
+    border: 2px solid rgb(0, 87, 142);
+    border-radius: 35%;
+    width: 40rem;
+    height: auto;
+}
+
+.aboutme-text {
+    display: block;
+    font-size: 1.4rem;
+    padding: 0 4rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.aboutme-text a {
+    color: rgb(0, 0, 0, .7);
+    text-decoration: underline;
 }
