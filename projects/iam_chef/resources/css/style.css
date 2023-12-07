@@ -1,0 +1,529 @@
+/* universal styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.main-content {
+    position: relative;
+    top: 5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+  
+.button {
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    color: white;
+}
+  
+.image-container {
+    overflow: hidden;
+}
+  
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+  
+@media only screen and (max-width: 895px) {
+    .main-content {
+      margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-content {
+        top: -5rem;
+    }
+}
+
+/* header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: solid 3px darkorange;
+    background-color: white;
+}
+
+nav li {
+    padding: 1.5rem;
+    display: inline-flex;
+    align-content: center;
+}
+
+nav li a {
+    margin-top: .1rem;
+}
+
+nav li img {
+    margin-left: .5rem;
+}
+  
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1rem;
+    padding: 1rem 1rem 0 1rem;
+    color: black;
+}
+  
+header .thumb {
+    display: inline-flex;
+    flex: 1;
+}
+
+header .icon {
+    width: 2rem;
+    padding-left: .75rem;
+}
+
+.thumb img {
+    width: 70%;
+    height: auto;
+    margin: 0;
+}
+
+.thumb p {
+    font-family: 'Lobster', Georgia, 'Times New Roman', Times, serif;
+    align-self: center;
+    font-size: 3.5rem;
+    margin-left: -1rem;
+    opacity: .75;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+header .mobile {
+    display: none;
+}  
+
+@media only screen and (max-width: 895px) {
+    nav li:last-child {
+      display: block;
+    }
+  
+    header .content {
+      padding: 1rem 1rem;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    header .content {
+        margin: 0;
+    }
+
+    header .thumb {
+        display: flex;
+    }
+
+    header .thumb p {
+        font-size: 2.2rem;
+        margin-left: .2rem;
+    }
+    
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+
+    .search-container {
+        text-align: right;
+    }
+  }
+
+  /* main content */
+
+  /* banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    height: 50rem;
+    background-image: url('../images/sebastian-coman-photography-cQbOSRpElxw-unsplash.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    display: block;
+    background-color: rgb(74, 74, 74, 0.7);
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    line-height: 5rem;
+}
+
+.title h1 {
+    font-size: 6rem;
+    font-family: 'Rubik', Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: .6rem;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        margin-top: 8rem;
+    }
+    .title h1 {
+        font-size: 4rem;
+    }
+    .title h2 {
+        font-size: .8rem;
+    }
+}
+
+/* intro text */
+
+.intro-text {
+    margin: 2rem 4rem;
+    line-height: 3rem;
+}
+
+.intro-text h3 {
+    font-size: 2rem;
+    color: darkorange;
+}
+
+.intro-text h4 {
+    font-size: 1.5rem;
+}
+
+.intro-text a {
+    text-decoration: underline;
+    color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+    .intro-text {
+        margin: 1rem 2rem;
+        line-height: 2.5rem;
+    }
+    .intro-text h4 {
+        text-align: justify;
+        font-size: 1rem;
+    }
+
+    .intro-text p {
+        font-size: .75rem;
+    }
+}
+
+/* photo grid */
+
+.photo-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    background-color: rgb(255, 140, 0, .4);
+}
+
+.box {
+    height: 80%;
+    overflow: hidden;
+    margin: 0 2%;
+    border-radius: 2%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+    filter: grayscale(30%);
+}
+
+@media only screen and (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        gap: 0;
+    }
+
+    .box {
+        height: 90%;
+        margin: -1.5rem;
+    }
+}
+
+/* testimonies */
+
+.testimonies {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.quote {
+    line-height: 2rem;
+    padding: 2% 2% 2%;
+    width: 100%;
+    background-color: rgb(51, 46, 41, 0.8);
+    color: antiquewhite;
+}
+
+.quote h5 {
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .quote {
+        padding: 5% 5% 5%;
+    }
+
+    .quote h5 {
+        font-size: 1rem;
+    }
+
+    .quote p {
+        font-size: .7rem;
+    }
+}
+
+/* sign up */
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    background-image: url('../images/chinh-le-duc-vuDXJ60mJOA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.invitation-form {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    color: darkorange;
+    padding: .5%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .7);
+    width: 100%;
+}
+
+.invitation-form h2 {
+    font-family: 'Rubik', Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+
+.join {
+    width: 16rem;
+    height: auto;
+    margin: 0 auto;
+    background-color: orange;
+    color: white;
+    border: 3px solid darkorange;
+    font-size: 1.8rem;
+    margin-top: -5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: linear-gradient(to top, #ff9f00, #ff7b00);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sign-up-mobile {
+    display: none;
+}
+
+#email {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 40rem;
+    height: 3rem;
+    margin-top: -3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .sign-up {
+        display: none;
+    }
+
+    .sign-up-mobile {
+        display: flex;
+        background-image: url('../images/chinh-le-duc-vuDXJ60mJOA-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .crop {
+        height: 29rem;
+    }
+
+    .invitation-form {
+        gap: 0;
+    }
+
+    .invitation-form h2 {
+        font-size: 2rem;
+        margin: .5rem;
+        margin-bottom: -8%;
+    }
+
+    .invitation-form #email-mobile {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 40rem;
+        height: 3rem;
+        margin-top: -3rem;
+        width: 75%;
+    }
+
+    .join {
+        margin-top: -15rem;
+    }
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 5rem;
+    border-top: solid 3px darkorange;
+    background-color: #66543D;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+footer .bottom a {
+    padding-top: .5rem;
+    color: white;
+}
+
+footer .content p {
+    color: black;
+    font-size: .75rem;
+    margin-top: 2.5rem;
+}
+
+footer .mobile {
+    display: none;
+}  
+
+@media only screen and (max-width: 895px) {
+    footer .content {
+      padding: 1rem 1rem;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    footer {
+        height: 7rem;
+    }
+
+    footer .desktop {
+      display: none;
+    }
+  
+    footer .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    footer .content {
+      padding: .5rem;
+      margin: 0;
+    }
+  
+    footer .mobile ul {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: .5rem;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 0;
+      margin-left: .75rem;
+      width: 100%;
+    }
+  
+    footer .mobile li {
+        padding: 0;
+    }
+    
+    footer .bottom a {
+        font-size: .75rem;
+    }
+}

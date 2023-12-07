@@ -1,0 +1,51 @@
+#georgia {
+    font-family: Georgia;
+}
+
+#arial {
+    font-family: Arial;
+}
+
+#verdana {
+    font-family: Verdana;
+}
+
+#impact {
+    font-family: Impact;
+}
+
+#serif {
+    font-family: serif;
+}
+
+#roboto {
+    font-family: 'Roboto', sans-serif;;
+}
+
+#montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+#agbalumo {
+    font-family: 'Agbalumo', sans-serif;
+}
+
+#lobster {
+    font-family: 'Lobster', sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.regular {
+    font-weight: 100;
+}
