@@ -10,26 +10,54 @@ html {
 }
 
 body {
-    background-color: rgb(255, 179, 128, .7);
+    background-color: rgb(41, 147, 204, .2);
+    overflow-x: hidden;
 }
 
 a {
     cursor: pointer;
 }
 
+.borders {
+    display: grid;
+    grid-template-columns: 4% 92% 4%;
+}
+
+.border {
+    display: block;
+    z-index: 100;
+    content: '';
+    background-color:rgb(255, 254, 232);
+}
+
+.left {
+    border-right: 2px dashed black;
+}
+
+.right {
+    border-left: 2px dashed black;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 /* header */
 
 header {
     position: fixed;
+    overflow: hidden;
+    width: 92%;
+    height: 6.5rem;
     z-index: 100;
-    width: 100%;
     font-size: 1.2rem;
-    border-bottom: 2px solid rgb(0, 87, 142);
+    border-bottom: 2px dashed black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: .5rem 1.5rem;
-    background-color:rgb(106, 192, 230);
+    background-color:rgb(255, 254, 232);
 }
 
 .mobile {
@@ -68,6 +96,12 @@ header {
     display: flex;
 }
 
+header {
+    width: 100%;
+    height: 7rem;
+    overflow: visible;
+}
+
 }
 
 /* buttons and links */
@@ -104,7 +138,7 @@ header {
     background-color: orange;
     box-shadow: (0, 51, 102) 0 0 0 0 inset;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    border: 2px solid rgb(0, 87, 142);
+    border: 2px solid navy;
     border-radius: 5%;
     cursor: pointer;
 }
@@ -160,7 +194,7 @@ header {
 .subheader {
     display: inline-flex;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 2rem 0;
     text-shadow: 1px 1px 2px black;
     letter-spacing: .25rem;
@@ -168,12 +202,14 @@ header {
 
 .number {
     font-weight: bold;
+    font-size: 3.5rem;
+    color: crimson;
 }
 
 .subtitle {
     padding-left: 2rem;
-    text-decoration: underline;
-    color: darkblue;
+
+    color: navy;
 }
 
 /* intro */
@@ -182,6 +218,10 @@ header {
     position: relative;
     top: 8rem;
     padding-left: 1rem;
+}
+
+.intro {
+    padding-bottom: 2rem;
 }
 
 .intro p {
@@ -198,27 +238,27 @@ header {
     padding: 0 5rem;
     margin-top: -4rem;
     text-shadow: 1px 1px 2px black;
+    color: crimson;
 }
 
 .intro h2 {
-    color: darkblue;
+    color: navy;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     padding: 2rem 5rem;
     font-size: 1.7rem;
 }
 
-#atom {
+.atom {
     position: absolute;
-    z-index: -10;
     top: -3rem;
-    left: 62rem;
+    left: 60rem;
     width: 52rem;
     height: auto;
-    opacity: .75;
+    opacity: .2;
 }
 
 #description {
-    background-color: rgb(173, 216, 230, .8);
+    background-color: rgb(41, 147, 204, .3);
     padding: 2.5rem;
     margin-left: 2.5rem;
     text-align: justify;
@@ -227,10 +267,11 @@ header {
 /* about me */
 
 .about-me {
-    margin: 13rem 6rem;
+    margin: 12rem 6rem;
     display: flex;
-    background-color: rgb(173, 216, 230, .8);
+    background-color: rgb(41, 147, 204, .3);
     padding: 2.5rem;
+    z-index: 100;
 }
 
 .profile-pic {
@@ -242,13 +283,44 @@ header {
 
 .aboutme-text {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
     padding: 0 4rem;
-    text-align: justify;
-    line-height: 2rem;
+    line-height: 1.6rem;
+}
+
+.aboutme-text p {
+    text-align: start;
 }
 
 .aboutme-text a {
     color: rgb(0, 0, 0, .7);
     text-decoration: underline;
+}
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skill-set {
+    display: inline-flex;
+    align-items: center;
+}
+
+#webpack-logo {
+    height: auto;
+    width: 12rem;
+    margin-left: 8rem;
+}
+
+#github-logo {
+    height: auto;
+    width: 10rem;
+    margin-left: 1.8rem;
+}
+
+#git-logo {
+    height: auto;
+    width: 10rem;
+    margin-left: 1.5rem;
 }
