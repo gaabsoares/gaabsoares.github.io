@@ -47,6 +47,10 @@ a {
     font-style: italic;
 }
 
+.transition {
+    transition: background-color .3s ease-in-out;
+}
+
 /* header */
 
 header {
@@ -90,7 +94,6 @@ header {
     height: 3rem;
     margin-right: .75rem;
 }
-
 @media only screen and (max-width: 600px) {
 .desktop {
     display: none;
@@ -112,7 +115,7 @@ header {
 
 .menu {
     position: relative;
-    right: -40.5rem;
+    right: -51rem;
     transition: right .3s ease-in-out;
 }
 
@@ -209,7 +212,6 @@ header {
 
 .subtitle {
     padding-left: 2rem;
-
     color: navy;
 }
 
@@ -226,6 +228,13 @@ header {
     letter-spacing: .1rem;
     padding: 0 4rem;
     line-height: 1.6rem;
+}
+
+.vector {
+    position: absolute;
+    height: auto;
+    opacity: .2;
+    z-index: -10;
 }
 
 /* intro */
@@ -265,12 +274,9 @@ header {
 }
 
 .atom {
-    position: absolute;
     top: -3rem;
     left: 60rem;
     width: 52rem;
-    height: auto;
-    opacity: .2;
     animation: rotate 5s linear infinite;
 }
 
@@ -367,14 +373,16 @@ header {
 }
 
 .wormhole {
-    position: absolute;
     top: 70rem;
     left: 15rem;
     width: 52rem;
-    height: auto;
-    opacity: .2;
-    z-index: -10;
     transform: rotate(45deg);
+}
+
+.tech {
+    width: 40rem;
+    top: 141.3rem;
+    left: 70rem;
 }
 
 #vba-logo {

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>gaabsoares Portfolio</title>
 </head>
-<body>
+<body class="transition">
 
 <!-- mobile header -->
     <header class="mobile">
@@ -33,13 +33,13 @@
     <!-- desktop content -->
 
         <div class="borders desktop">
-            <div class="border left">
+            <div id="border-left" class="border left transition">
             </div>
             <div class="content">
 
             <!-- header desktop -->
 
-            <header class="desktop">
+            <header id="desktop-header" class="desktop transition">
                 <div class="git">
                     <a class="gitacc" href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">
                     <img id="gitlogo" src="./resources/images/gitlogo.png" alt="github logo">
@@ -53,6 +53,7 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li id="changecolor"><a>Change Color</a></li>
                         <li class="resume"><a href="./resources/CV_LimaGabriel.pdf" target="_blank"><button type="button">Resume</button></a></li>
                     </ul>
                 </nav>
@@ -62,7 +63,7 @@
 
             <main class="main-content desktop">
                 <section id="intro-desktop" class="intro">
-                    <img class="atom" src="./resources/images/atom-svgrepo-com.png" alt="atom vector">
+                    <img class="atom vector" src="./resources/images/atom-svgrepo-com.png" alt="atom vector">
                     <p>Hello, my name is</p>
                     <h1>Gabriel.</h1>
                     <h2>Crafting digital solutions for the web fuels my passion and purpose.</h2>
@@ -119,7 +120,8 @@
                         <li>Recognized for adept problem-solving skills. Successfully tackled intricate challenges such as automating deep diving activities, involving extensive analytical work.</li>
                     </ul>
                     </div>
-                    <img class="wormhole" src="./resources/images/wormhole-7134044_960_720.png" alt="wormhole vector">
+                    <img class="wormhole vector" src="./resources/images/wormhole-7134044_960_720.png" alt="wormhole vector">
+                    <img class="tech vector" src="./resources/images/pngtree-abstract-blue-digital-technology-lines-diagram-png-image_6474402.png" alt="tech vector">
                 </section>
 
                 <!-- projects desktop -->
@@ -200,7 +202,7 @@
                 </section>
             </main>
             </div>
-            <div class="border right">
+            <div id="border-right" class="border right transition">
             </div>
         </div>
 <script type="text/javascript" src="./resources/js/script.js"></script>

@@ -1,3 +1,5 @@
+// show/hide menu
+
 let menuButton = document.getElementById('show-menu');
 let menu = document.getElementById('hidden-menu');
 let menuHidden = true;
@@ -7,10 +9,41 @@ menuButton.onmousedown = () => {
         menu.style.right = 0;
         menuHidden = false;
     } else {
-        menu.style.right = '-40.5rem';
+        menu.style.right = '-51rem';
         menuHidden = true;
     }
 };
+
+// change color of bg/border
+
+const yellow = 'rgb(255, 254, 232)';
+const blue = 'rgb(41, 147, 204)';
+const lightYellow = 'rgb(255, 254, 232, .5)';
+const lightBlue = 'rgb(41, 147, 204, .2)';
+
+let bgColor = yellow;
+
+let changeColorButton = document.getElementById('changecolor');
+let header = document.getElementById('desktop-header');
+let borderLeft = document.getElementById('border-left');
+let borderRight = document.getElementById('border-right');
+let body = document.body;
+
+changeColorButton.onclick = () => {
+    if (bgColor === yellow) {
+        header.style.backgroundColor = blue;
+        borderLeft.style.backgroundColor = blue;
+        borderRight.style.backgroundColor = blue;
+        body.style.backgroundColor = lightYellow;
+        bgColor = blue;
+    } else {
+        header.style.backgroundColor = yellow;
+        borderLeft.style.backgroundColor = yellow;
+        borderRight.style.backgroundColor = yellow;
+        body.style.backgroundColor = lightBlue;
+        bgColor= yellow;
+    }
+}
 
 // projects screen
 
