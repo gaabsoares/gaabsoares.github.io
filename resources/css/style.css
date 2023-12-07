@@ -30,6 +30,26 @@ a {
     background-color:rgb(255, 254, 232);
 }
 
+.button {
+    text-decoration: none;
+}
+
+.button button {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: orange;
+    box-shadow: (0, 51, 102) 0 0 0 0 inset;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border: 2px solid navy;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.button button:hover {
+    color: white;
+    box-shadow: darkorange 15rem 0 0 0 inset;
+}
+
 .left {
     border-right: 2px dashed black;
 }
@@ -49,6 +69,10 @@ a {
 
 .transition {
     transition: background-color .3s ease-in-out;
+}
+
+.gap {
+    margin-top: -2rem;
 }
 
 /* header */
@@ -129,26 +153,6 @@ header {
 
 .menu a:active {
     color: darkorange;
-}
-
-.resume {
-    text-decoration: none;
-}
-
-.resume button {
-    font-size: 1.2rem;
-    padding: 1rem;
-    background-color: orange;
-    box-shadow: (0, 51, 102) 0 0 0 0 inset;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    border: 2px solid navy;
-    border-radius: 5%;
-    cursor: pointer;
-}
-
-.resume button:hover {
-    color: white;
-    box-shadow: darkorange 7rem 0 0 0 inset;
 }
 
 .menu-button {
@@ -298,7 +302,7 @@ header {
 /* about me */
 
 .profile-pic {
-    border: 2px solid rgb(0, 87, 142);
+    border: 3px solid navy;
     border-radius: 35%;
     width: 40rem;
     height: auto;
@@ -356,10 +360,6 @@ header {
 
 /* experience */
 
-#experience {
-    margin-top: -1rem;
-}
-
 .experience {
     line-height: 2.5rem;
 }
@@ -372,16 +372,16 @@ header {
     list-style: circle;
 }
 
-.wormhole {
+.tech-one {
     top: 70rem;
-    left: 15rem;
-    width: 52rem;
+    left: -20rem;
+    width: 70rem;
     transform: rotate(45deg);
 }
 
 .tech {
     width: 40rem;
-    top: 141.3rem;
+    top: 140.3rem;
     left: 70rem;
 }
 
@@ -407,13 +407,19 @@ header {
     #vba-logo {
         margin-left: 27rem;
     }
+
+    .tech-one {
+        width: 50rem;
+    }
+
+    .tech {
+        width: 30rem;
+        left: 50rem;
+        top: 144.6rem;
+    }
 }
 
 /* projects */
-
-#projects {
-    margin-top: -1rem;
-}
 
 .projects {
     width: 100%;
@@ -446,7 +452,7 @@ header {
 .content-screen {
     margin-left: 5.3rem;
     height: 43rem;
-    border: 3px solid black;
+    border: 3px solid navy;
 }
 
 .content-screen img {
@@ -470,6 +476,13 @@ header {
     display: none;
 }
 
+.tech-two {
+    width: 70rem;
+    height: auto;
+    top: 175rem;
+    left: -10rem;
+}
+
 @media only screen and (max-width: 1600px) {
     .projects {
         height: 42rem;
@@ -478,4 +491,84 @@ header {
     .content-screen {
         height: 31rem;
     }
+
+    .tech-two {
+        width: 50rem;
+    }
+}
+
+/* contact */
+
+.contacts {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    line-height: 2rem;
+    border: 3px solid navy;
+}
+
+.contacts h3 {
+    background-color: rgb(211, 211, 211, .6);
+    margin-left: 6rem;
+    margin-right: 6rem;
+    font-size: 1.4rem;
+    padding: .5rem;
+}
+
+.contacts ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contacts li {
+    display: inline-flex;
+    align-items: center;
+    margin: .8rem 1.5rem;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.contacts li img {
+    margin-right: 1rem;
+}
+
+.contactinfo {
+    font-size: 1rem;
+}
+
+.contactinfo a {
+    transition: color .2s ease-in-out;
+}
+
+.contactinfo a:hover {
+    color:orange;
+}
+
+.contactinfo a:active {
+    color: darkorange;
+}
+
+.email button {
+    width: 12rem;
+    height: 4rem;
+}
+
+.symbol {
+    width: 2rem;
+    height: auto;
+    align-self: center;
+}
+
+/* footer */
+
+footer {
+    content: '';
+    height: 3rem;
+    background-color:rgb(255, 254, 232);
+    border-top: 2px dashed black;
+    width: 100%;
 }

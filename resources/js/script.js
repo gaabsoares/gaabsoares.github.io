@@ -18,7 +18,7 @@ menuButton.onmousedown = () => {
 
 const yellow = 'rgb(255, 254, 232)';
 const blue = 'rgb(41, 147, 204)';
-const lightYellow = 'rgb(255, 254, 232, .5)';
+const lightYellow = 'rgb(255, 254, 232, .8)';
 const lightBlue = 'rgb(41, 147, 204, .2)';
 
 let bgColor = yellow;
@@ -27,6 +27,7 @@ let changeColorButton = document.getElementById('changecolor');
 let header = document.getElementById('desktop-header');
 let borderLeft = document.getElementById('border-left');
 let borderRight = document.getElementById('border-right');
+let footer = document.getElementById('footer');
 let body = document.body;
 
 changeColorButton.onclick = () => {
@@ -35,12 +36,14 @@ changeColorButton.onclick = () => {
         borderLeft.style.backgroundColor = blue;
         borderRight.style.backgroundColor = blue;
         body.style.backgroundColor = lightYellow;
+        footer.style.backgroundColor = blue;
         bgColor = blue;
     } else {
         header.style.backgroundColor = yellow;
         borderLeft.style.backgroundColor = yellow;
         borderRight.style.backgroundColor = yellow;
         body.style.backgroundColor = lightBlue;
+        footer.style.backgroundColor = yellow;
         bgColor= yellow;
     }
 }
