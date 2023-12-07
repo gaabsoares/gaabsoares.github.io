@@ -7,7 +7,7 @@ menuButton.onmousedown = () => {
         menu.style.right = 0;
         menuHidden = false;
     } else {
-        menu.style.right = '-37rem';
+        menu.style.right = '-40.5rem';
         menuHidden = true;
     }
 };
