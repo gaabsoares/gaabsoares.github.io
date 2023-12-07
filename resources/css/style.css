@@ -39,7 +39,7 @@ a {
     padding: 1rem;
     background-color: orange;
     box-shadow: (0, 51, 102) 0 0 0 0 inset;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: all .5s ease-in-out;
     border: 2px solid navy;
     border-radius: 5%;
     cursor: pointer;
@@ -47,7 +47,7 @@ a {
 
 .button button:hover {
     color: white;
-    box-shadow: darkorange 15rem 0 0 0 inset;
+    box-shadow: darkorange 12rem 0 0 0 inset;
 }
 
 .left {
@@ -188,12 +188,12 @@ header {
 
 .mobile .menu:hover {
     top: 3rem;
-    background-color:rgb(40, 134, 176);
+    background-color:rgb(255, 254, 232);
     margin-left: -1rem;
     margin-top: -2.3rem;
     padding-top: .5rem;
     padding-bottom: 1.5rem;
-    border: 2px solid rgb(0, 87, 142);
+    border: 2px solid black;
 }
 
 }
@@ -283,7 +283,7 @@ header {
     left: 60rem;
     width: 52rem;
     opacity: .3;
-    animation: rotate 5s linear infinite;
+    animation: rotate 10s linear infinite;
 }
 
 #description {
