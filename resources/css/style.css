@@ -118,6 +118,8 @@ header {
     height: 3rem;
     margin-right: .75rem;
 }
+
+
 @media only screen and (max-width: 600px) {
 .desktop {
     display: none;
@@ -237,7 +239,6 @@ header {
 .vector {
     position: absolute;
     height: auto;
-    opacity: .2;
     z-index: -10;
 }
 
@@ -281,6 +282,7 @@ header {
     top: -3rem;
     left: 60rem;
     width: 52rem;
+    opacity: .3;
     animation: rotate 5s linear infinite;
 }
 
@@ -301,9 +303,12 @@ header {
 
 /* about me */
 
+.aboutme {
+    width: 80%;
+}
+
 .profile-pic {
     border: 3px solid navy;
-    border-radius: 35%;
     width: 40rem;
     height: auto;
 }
@@ -358,6 +363,25 @@ header {
     }
 }
 
+@media only screen and (max-width: 1500px) {
+    .aboutme {
+        font-size: .9rem;
+        text-align: justify;
+        margin-left: -2rem;
+    }
+
+    .profile-pic {
+        height: 16rem;
+        width: auto;
+        margin-top: 6rem;
+    }
+
+    .skill-set {
+        margin-top: 2rem;
+        margin-left: -8rem;
+    }
+}
+
 /* experience */
 
 .experience {
@@ -376,6 +400,7 @@ header {
     top: 70rem;
     left: -20rem;
     width: 70rem;
+    opacity: .1;
     transform: rotate(45deg);
 }
 
@@ -383,6 +408,7 @@ header {
     width: 40rem;
     top: 140.3rem;
     left: 70rem;
+    opacity: .3;
 }
 
 #vba-logo {
@@ -405,7 +431,16 @@ header {
 
 @media only screen and (max-width: 1600px) {
     #vba-logo {
+        width: 6rem;
         margin-left: 27rem;
+    }
+
+    #tableau-logo {
+        width: 8rem;
+    }
+
+    #powerbi-logo {
+        width: 12rem;
     }
 
     .tech-one {
@@ -416,6 +451,34 @@ header {
         width: 30rem;
         left: 50rem;
         top: 144.6rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #vba-logo {
+        width: 5rem;
+        margin-left: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    #tableau-logo {
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+
+    #powerbi-logo {
+        width: 11rem;
+        margin-bottom: 1rem;
+    }
+
+    .tech-one {
+        width: 50rem;
+    }
+
+    .tech {
+        width: 30rem;
+        left: 50rem;
+        top: 147.1rem;
     }
 }
 
@@ -481,6 +544,7 @@ header {
     height: auto;
     top: 175rem;
     left: -10rem;
+    opacity: .1;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -508,7 +572,7 @@ header {
 }
 
 .contacts h3 {
-    background-color: rgb(211, 211, 211, .6);
+    background-color: rgb(211, 211, 211, .4);
     margin-left: 6rem;
     margin-right: 6rem;
     font-size: 1.4rem;
