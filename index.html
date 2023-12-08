@@ -11,8 +11,11 @@
 </head>
 <body class="transition">
 
-<!-- mobile header -->
-    <header class="mobile">
+<!-- mobile content-->
+
+    <!-- mobile header -->
+
+    <header id="mobile-header" class="mobile row">
         <div class="git">
             <a class="gitacc" href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">
             <img class="signature" src="./resources/images/IMG_0878 - Editado.png" alt="signature">
@@ -20,7 +23,7 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#aboutme-mobile">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -30,210 +33,253 @@
         </nav>
     </header>
 
-    <!-- desktop content -->
+    <!-- main content mobile -->
 
-        <div class="borders desktop">
-            <div id="border-left" class="border left transition">
-            </div>
-            <div class="content">
+    <main class="main-content mobile">
+        <section id="intro-mobile" class="intro">
+            <img class="atom vector" src="./resources/images/atom-svgrepo-com.png" alt="atom vector">
+            <p>Hello, my name is</p>
+            <h1>Gabriel.</h1>
+            <h2>Crafting digital solutions for the web fuels my passion and purpose.</h2>
+            <p class="description">I hold a Bachelor's in Business Management from PUC-Campinas and currently pursue an MBA at USP. Alongside, I've been devotedly teaching myself software development, focusing on web-based projects. I thrive on building for the web and am eager to apply my skills in a professional setting.</p>
+        </section>
+        
+        <!-- about me mobile -->
 
-            <!-- header desktop -->
-
-            <header id="desktop-header" class="desktop transition">
-                <div class="git">
-                    <a class="gitacc" href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">
-                    <img id="gitlogo" src="./resources/images/gitlogo.png" alt="github logo">
-                    <img class="signature" src="./resources/images/IMG_0878 - Editado.png" alt="signature">
-                </a>
-                </div>
-                <nav id="hidden-menu" class="menu">
-                    <ul>
-                        <li id="show-menu" class="menu-button"><a href=""><img src="./resources/images/menu-icon.png" alt="menu"></a></li>
-                        <li><a href="#aboutme">About Me</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li id="changecolor"><a>Change Color</a></li>
-                        <li class="button"><a href="./resources/CV_LimaGabriel.pdf" target="_blank"><button type="button">Resume</button></a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <!-- main content desktop -->
-
-            <main class="main-content desktop">
-                <section id="intro-desktop" class="intro">
-                    <img class="atom vector" src="./resources/images/atom-svgrepo-com.png" alt="atom vector">
-                    <p>Hello, my name is</p>
-                    <h1>Gabriel.</h1>
-                    <h2>Crafting digital solutions for the web fuels my passion and purpose.</h2>
-                    <p id="description">I hold a Bachelor's in Business Management from PUC-Campinas and currently pursue an MBA at USP. Alongside, I've been devotedly teaching myself software development, focusing on web-based projects. I thrive on building for the web and am eager to apply my skills in a professional setting.</p>
-                </section>
-
-                <!-- about me desktop -->
-
-                <div id="aboutme"></div>
-                <section class="content-block">
-                    <img class="profile-pic" src="./resources/images/60a3affc-5ce0-467e-be46-c09e61570b37.jpg" alt="profile pic">
-                    <div class="aboutme text">
-                        <div class="subheader">
-                            <h2 class="number">1. </h2>
-                            <h2 class="subtitle">About me</h2>
-                        </div>
-                        <p>Hey there, I'm Gabriel Soares, on an electrifying coding journey hailing from Campinas, São Paulo, Brazil.</p><br>
-                        <p>Armed with my keyboard and fueled by curiosity, I'm charting my course through the coding cosmos, with <a href="https://www.codecademy.com/" target="_blank" rel="noopener">Codecademy</a> as my trusty launchpad.</p>
-                        <p>Midway through Codecademy's Front-End path, I'm creating captivating web experiences. My aim? To code elegant solutions that solve real problems, crafting high-performing apps that bring joy to users.</p><br>
-                        <p>You can read more about me on my <a href="https://www.linkedin.com/in/gabriel-soares-70540718a/" target="_blank" rel="noopener" alt="linkedin">Linkedin</a> page or check out the work I have done on my <a href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">GitHub.</a></p><br>
-                        <div class="skills">
-                            <h3 class="bold">Skills:</h3>
-                            <div class="skill-set">
-                                <img id="webpack-logo" src="./resources/images/logo-html5-js-css3-png-transparent-logo-4.png" alt="html/css/js logo">
-                                <img id="github-logo" src="./resources/images/GitHub-logo.png" alt="github logo">
-                                <img id="git-logo" src="./resources/images/Git-Logo-2Color.png" alt="git logo">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- experience desktop -->
-
-                <div id="experience" class="gap"></div>
-                <section class="content-block">
-                    <div class="experience text">
-                        <div class="subheader">
-                            <h2 class="number">2. </h2>
-                            <h2 class="subtitle">Experience</h2>
-                        </div>
-                    <div class="skill-set">
-                    <br>
-                    <img id="vba-logo" src="./resources/images/vba.png" alt="vba logo">
-                    <img id="tableau-logo" src="./resources/images/Tableau-Emblem.png" alt="tableau logo">
-                    <img id="powerbi-logo" src="./resources/images/microsoft_powerbi_logo_icon_169958.png" alt="power bi logo">
-                    </div>
-                    <h3 class="bold">Supply Chain Analyst: 4flow</h3>
-                    <p class="italics">Campinas, SP, Brasil</p>
-                    <ul class="experience-description">
-                        <li>Utilized VBA/Macro to optmize processes and build complex Excel tools.</li>
-                        <li>Engaging in daily tasks involving Power BI/Tableau.</li>
-                        <li>Direct and strong relationship with the customer.</li>
-                        <li>Day-to-day work within a multinational team spanning Brazil and Europe.</li>
-                        <li>Recognized for adept problem-solving skills. Successfully tackled intricate challenges such as automating deep diving activities, involving extensive analytical work.</li>
-                    </ul>
-                    </div>
-                    <img class="tech-one vector" src="./resources/images/pngegg.png" alt="tech vector two">
-                    <img class="tech vector" src="./resources/images/pngtree-abstract-blue-digital-technology-lines-diagram-png-image_6474402.png" alt="tech vector">
-                </section>
-
-                <!-- projects desktop -->
-
-                <div id="projects" class="gap"></div>
-                <section class="content-block">
-                    <div class="projects text">
-                            <div class="subheader">
-                            <h2 class="number">3. </h2>
-                            <h2 class="subtitle">Some projects I have built</h2>
-                        </div>
-
-                        <!-- project one -->
-
-                        <h3 id="project-one-title" class="project-title">My first ever HTML/CSS project:</h3>
-                        <div id="project-one" class="projects-screen">
-                            <span></span>
-                            <div class="content-screen">
-                                <a href="https://github.com/gaabsoares/html-css-guide" target="_blank" rel="noopener">
-                                    <img src="./resources/images/first-project.png" alt="first html/css project">
-                                </a>
-                            </div>
-                            <img id="arrow-zero" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
-                        </div>
-
-                        <!-- project two -->
-
-                        <h3 id="project-two-title" class="project-title">My first CSS stylesheet project:</h3>
-                        <div id="project-two" class="projects-screen">
-                            <img id="arrow-one" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
-                            <div class="content-screen">
-                                <a href="./projects/css_stylesheet/index_stylesheet.html" target="_blank">
-                                    <img src="./resources/images/stylesheet_ss.png" alt="first css stylesheet">
-                                </a>
-                            </div>
-                            <img id="arrow-two" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
-                        </div>
-
-                        <!-- project three -->
-
-                        <h3 id="project-three-title" class="project-title">My first responsive website project:</h3>
-                        <div id="project-three" class="projects-screen">
-                            <img id="arrow-three" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
-                            <div class="content-screen">
-                                <a href="./projects/iam_chef/index_chef.html" target="_blank">
-                                    <img src="./resources/images/iamchef_ss.png" alt="first html/css project">
-                                </a>
-                            </div>
-                            <img id="arrow-four" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
-                        </div>
-
-                        <!-- project four -->
-
-                        <h3 id="project-four-title" class="project-title">Featured Project - Luhn Algorithm Validator:</h3>
-                        <div id="project-four" class="projects-screen">
-                            <img id="arrow-five" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
-                            <div class="content-screen">
-                                <a href="https://github.com/gaabsoares/creditcardchecker" target="_blank" rel="noopener">
-                                    <img src="./resources/images/creditcard_ss.png" alt="credit card checker project">
-                                </a>
-                            </div>
-                            <img id="arrow-six" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
-                        </div>
-
-                        <!-- project five -->
-
-                        <h3 id="project-five-title" class="project-title">Interactive game - Chore Door:</h3>
-                        <div id="project-five" class="projects-screen">
-                            <img id="arrow-seven" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
-                            <div class="content-screen">
-                                <a href="./projects/choredoor_game/index_choredoor.html" target="_blank" rel="noopener">
-                                    <img src="./resources/images/choredoor_ss.png" alt="chore door game project">
-                                </a>
-                            </div>
-                            <span></span>
-                        </div>
-                    </div>
-                    <img class="tech-two vector" src="./resources/images/pngegg.png" alt="tech vector two">
-                </section>
-
-                <!-- contact -->
-
-                <div id="contact" class="gap"></div>
-                <section class="content-block">
-                        <div class="contacts text">
-                            <div class="subheader">
-                            <h2 class="number">What's next?</h2>
-                            <h2 class="subtitle">Get in Touch</h2>
-                        </div>
-                        <h3>I'm eager for the opportunity to collaborate with you—my inbox is at your disposal!</h3><br>
-                        <a class="email button" href="mailto:gabrielsoaresdelima@hotmail.com" target="_blank"><button type="button">Send An Email</button></a>
-                        <ul class="contactinfo">
-                            <li><img class="symbol" src="./resources/images/pngegg_mail.png" alt="mail symbol">gabrielsoaresdelima@hotmail.com</li>
-                            <li><img class="symbol" src="./resources/images/pngegg_phone.png" alt="phone symbol">+55 35 991391326</li>
-                            <li class="link"><img class="symbol" src="./resources/images/gitlogo.png" alt="github symbol"><a href="https://github.com/gaabsoares" target="_blank" rel="noopener">https://github.com/gaabsoares</a></li>
-                            <li class="link"><img class="symbol" src="./resources/images/pngegg_in.png" alt="linkedin symbol"><a href="https://www.linkedin.com/in/gabriel-soares-70540718a/" target="_blank" rel="noopener">https://www.linkedin.com/in/gabriel-soares-70540718a/</a></li>
-                            <li class="link"><img class="symbol" src="./resources/images/pngegg_file.png" alt="file symbol"><a href="./resources/CV_LimaGabriel.pdf" target="_blank">My Resume</a></li>
-                        </ul>
-                </section>
-            </main>
-
-            <!-- footer -->
-
-            <footer id="footer" class="transition">
-            </footer>
-            </div>
-
-            <!-- border right -->
-
-            <div id="border-right" class="border right transition">
-            </div>
+        <div id="aboutme-mobile">
         </div>
+        <section class="content-block mobile">
+            <img class="profile-pic" src="./resources/images/60a3affc-5ce0-467e-be46-c09e61570b37.jpg" alt="profile pic">
+            <div class="aboutme text">
+                <div class="subheader">
+                    <h2 class="number">1. </h2>
+                    <h2 class="subtitle">About me</h2>
+                </div>
+                <p>Hey there, I'm Gabriel Soares, on an electrifying coding journey hailing from Campinas, São Paulo, Brazil.</p><br>
+                <p>Armed with my keyboard and fueled by curiosity, I'm charting my course through the coding cosmos, with <a href="https://www.codecademy.com/" target="_blank" rel="noopener">Codecademy</a> as my trusty launchpad.</p>
+                <p>Midway through Codecademy's Front-End path, I'm creating captivating web experiences. My aim? To code elegant solutions that solve real problems, crafting high-performing apps that bring joy to users.</p><br>
+                <p>You can read more about me on my <a href="https://www.linkedin.com/in/gabriel-soares-70540718a/" target="_blank" rel="noopener" alt="linkedin">Linkedin</a> page or check out the work I have done on my <a href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">GitHub.</a></p><br>
+                <div class="skills">
+                    <h3 class="bold">Skills:</h3><br>
+                    <div class="skill-set">
+                        <img class="webpack-logo" src="./resources/images/logo-html5-js-css3-png-transparent-logo-4.png" alt="html/css/js logo">
+                        <img class="github-logo" src="./resources/images/GitHub-logo.png" alt="github logo">
+                        <img class="git-logo" src="./resources/images/Git-Logo-2Color.png" alt="git logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<!-- desktop content -->
+
+    <!-- border left -->
+
+    <div class="borders desktop">
+    <div id="border-left" class="border left transition">
+    </div>
+    <div class="content">
+
+    <!-- header desktop -->
+
+    <header id="desktop-header" class="desktop transition">
+        <div class="git">
+            <a class="gitacc" href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">
+            <img id="gitlogo" src="./resources/images/gitlogo.png" alt="github logo">
+            <img class="signature" src="./resources/images/IMG_0878 - Editado.png" alt="signature">
+        </a>
+        </div>
+        <nav id="hidden-menu" class="menu">
+            <ul>
+                <li id="show-menu" class="menu-button"><a href=""><img src="./resources/images/menu-icon.png" alt="menu"></a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="changecolor"><a>Change Color</a></li>
+                <li class="button"><a href="./resources/CV_LimaGabriel.pdf" target="_blank"><button type="button">Resume</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main content desktop -->
+
+    <main class="main-content desktop">
+        <section id="intro-desktop" class="intro">
+            <img class="atom vector" src="./resources/images/atom-svgrepo-com.png" alt="atom vector">
+            <p>Hello, my name is</p>
+            <h1>Gabriel.</h1>
+            <h2>Crafting digital solutions for the web fuels my passion and purpose.</h2>
+            <p class="description">I hold a Bachelor's in Business Management from PUC-Campinas and currently pursue an MBA at USP. Alongside, I've been devotedly teaching myself software development, focusing on web-based projects. I thrive on building for the web and am eager to apply my skills in a professional setting.</p>
+        </section>
+
+        <!-- about me desktop -->
+
+        <div id="aboutme"></div>
+        <section class="content-block">
+            <img class="profile-pic" src="./resources/images/60a3affc-5ce0-467e-be46-c09e61570b37.jpg" alt="profile pic">
+            <div class="aboutme text">
+                <div class="subheader">
+                    <h2 class="number">1. </h2>
+                    <h2 class="subtitle">About me</h2>
+                </div>
+                <p>Hey there, I'm Gabriel Soares, on an electrifying coding journey hailing from Campinas, São Paulo, Brazil.</p><br>
+                <p>Armed with my keyboard and fueled by curiosity, I'm charting my course through the coding cosmos, with <a href="https://www.codecademy.com/" target="_blank" rel="noopener">Codecademy</a> as my trusty launchpad.</p>
+                <p>Midway through Codecademy's Front-End path, I'm creating captivating web experiences. My aim? To code elegant solutions that solve real problems, crafting high-performing apps that bring joy to users.</p><br>
+                <p>You can read more about me on my <a href="https://www.linkedin.com/in/gabriel-soares-70540718a/" target="_blank" rel="noopener" alt="linkedin">Linkedin</a> page or check out the work I have done on my <a href="https://github.com/gaabsoares" target="_blank" alt="github acc" rel="noopener">GitHub.</a></p><br>
+                <div class="skills">
+                    <h3 class="bold">Skills:</h3>
+                    <div class="skill-set adjust">
+                        <img class="webpack-logo" src="./resources/images/logo-html5-js-css3-png-transparent-logo-4.png" alt="html/css/js logo">
+                        <img class="github-logo" src="./resources/images/GitHub-logo.png" alt="github logo">
+                        <img class="git-logo" src="./resources/images/Git-Logo-2Color.png" alt="git logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- experience desktop -->
+
+        <div id="experience" class="gap"></div>
+        <section class="content-block">
+            <div class="experience text">
+                <div class="subheader">
+                    <h2 class="number">2. </h2>
+                    <h2 class="subtitle">Experience</h2>
+                </div>
+            <div class="skill-set">
+            <br>
+            <img id="vba-logo" src="./resources/images/vba.png" alt="vba logo">
+            <img id="tableau-logo" src="./resources/images/Tableau-Emblem.png" alt="tableau logo">
+            <img id="powerbi-logo" src="./resources/images/microsoft_powerbi_logo_icon_169958.png" alt="power bi logo">
+            </div>
+            <h3 class="bold">Supply Chain Analyst: 4flow</h3>
+            <p class="italics">Campinas, SP, Brasil</p>
+            <ul class="experience-description">
+                <li>Utilized VBA/Macro to optmize processes and build complex Excel tools.</li>
+                <li>Engaging in daily tasks involving Power BI/Tableau.</li>
+                <li>Direct and strong relationship with the customer.</li>
+                <li>Day-to-day work within a multinational team spanning Brazil and Europe.</li>
+                <li>Recognized for adept problem-solving skills. Successfully tackled intricate challenges such as automating deep diving activities, involving extensive analytical work.</li>
+            </ul>
+            </div>
+            <img class="tech-one vector" src="./resources/images/pngegg.png" alt="tech vector two">
+            <img class="tech vector" src="./resources/images/pngtree-abstract-blue-digital-technology-lines-diagram-png-image_6474402.png" alt="tech vector">
+        </section>
+
+        <!-- projects desktop -->
+
+        <div id="projects" class="gap"></div>
+        <section class="content-block">
+            <div class="projects text">
+                    <div class="subheader">
+                    <h2 class="number">3. </h2>
+                    <h2 class="subtitle">Some projects I have built</h2>
+                </div>
+
+                <!-- project one -->
+
+                <h3 id="project-one-title" class="project-title">My first ever HTML/CSS project:</h3>
+                <div id="project-one" class="projects-screen">
+                    <span></span>
+                    <div class="content-screen">
+                        <a href="https://github.com/gaabsoares/html-css-guide" target="_blank" rel="noopener">
+                            <img src="./resources/images/first-project.png" alt="first html/css project">
+                        </a>
+                    </div>
+                    <img id="arrow-zero" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
+                </div>
+
+                <!-- project two -->
+
+                <h3 id="project-two-title" class="project-title">My first CSS stylesheet project:</h3>
+                <div id="project-two" class="projects-screen">
+                    <img id="arrow-one" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
+                    <div class="content-screen">
+                        <a href="./projects/css_stylesheet/index_stylesheet.html" target="_blank">
+                            <img src="./resources/images/stylesheet_ss.png" alt="first css stylesheet">
+                        </a>
+                    </div>
+                    <img id="arrow-two" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
+                </div>
+
+                <!-- project three -->
+
+                <h3 id="project-three-title" class="project-title">My first responsive website project:</h3>
+                <div id="project-three" class="projects-screen">
+                    <img id="arrow-three" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
+                    <div class="content-screen">
+                        <a href="./projects/iam_chef/index_chef.html" target="_blank">
+                            <img src="./resources/images/iamchef_ss.png" alt="first html/css project">
+                        </a>
+                    </div>
+                    <img id="arrow-four" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
+                </div>
+
+                <!-- project four -->
+
+                <h3 id="project-four-title" class="project-title">Featured Project - Luhn Algorithm Validator:</h3>
+                <div id="project-four" class="projects-screen">
+                    <img id="arrow-five" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
+                    <div class="content-screen">
+                        <a href="https://github.com/gaabsoares/creditcardchecker" target="_blank" rel="noopener">
+                            <img src="./resources/images/creditcard_ss.png" alt="credit card checker project">
+                        </a>
+                    </div>
+                    <img id="arrow-six" class="arrow" src="./resources/images/right-arrow.png" alt="right arrow button">
+                </div>
+
+                <!-- project five -->
+
+                <h3 id="project-five-title" class="project-title">Interactive game - Chore Door:</h3>
+                <div id="project-five" class="projects-screen">
+                    <img id="arrow-seven" class="arrow" src="./resources/images/left-arrow.png" alt="left arrow button">
+                    <div class="content-screen">
+                        <a href="./projects/choredoor_game/index_choredoor.html" target="_blank" rel="noopener">
+                            <img src="./resources/images/choredoor_ss.png" alt="chore door game project">
+                        </a>
+                    </div>
+                    <span></span>
+                </div>
+            </div>
+            <img class="tech-two vector" src="./resources/images/pngegg.png" alt="tech vector two">
+        </section>
+
+        <!-- contact -->
+
+        <div id="contact" class="gap"></div>
+        <section class="content-block">
+                <div class="contacts text">
+                    <div class="subheader">
+                    <h2 class="number">What's next?</h2>
+                    <h2 class="subtitle">Get in Touch</h2>
+                </div>
+                <h3>I'm eager for the opportunity to collaborate with you—my inbox is at your disposal!</h3><br>
+                <a class="email button" href="mailto:gabrielsoaresdelima@hotmail.com" target="_blank"><button type="button">Send An Email</button></a>
+                <ul class="contactinfo">
+                    <li><img class="symbol" src="./resources/images/pngegg_mail.png" alt="mail symbol">gabrielsoaresdelima@hotmail.com</li>
+                    <li><img class="symbol" src="./resources/images/pngegg_phone.png" alt="phone symbol">+55 35 991391326</li>
+                    <li class="link"><img class="symbol" src="./resources/images/gitlogo.png" alt="github symbol"><a href="https://github.com/gaabsoares" target="_blank" rel="noopener">https://github.com/gaabsoares</a></li>
+                    <li class="link"><img class="symbol" src="./resources/images/pngegg_in.png" alt="linkedin symbol"><a href="https://www.linkedin.com/in/gabriel-soares-70540718a/" target="_blank" rel="noopener">https://www.linkedin.com/in/gabriel-soares-70540718a/</a></li>
+                    <li class="link"><img class="symbol" src="./resources/images/pngegg_file.png" alt="file symbol"><a href="./resources/CV_LimaGabriel.pdf" target="_blank">My Resume</a></li>
+                </ul>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer id="footer" class="transition">
+    </footer>
+    </div>
+
+    <!-- border right -->
+
+    <div id="border-right" class="border right transition">
+    </div>
+    </div>
+
+    <!-- end of desktop content -->
 
 <script type="text/javascript" src="./resources/js/script.js"></script>
 </body>
