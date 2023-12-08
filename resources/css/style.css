@@ -193,7 +193,7 @@ header {
     text-align: center;
 }
 
-#mobile-nav:hover {
+.mobile .menu:hover {
     top: 3rem;
     background-color:rgb(255, 254, 232);
     margin-left: -1rem;
@@ -250,7 +250,6 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-
     .content-block {
         margin: 3rem 0;
         width: 100%;
@@ -352,6 +351,7 @@ header {
 
     .intro p {
         width: 100%;
+        text-align: justify;
     }
     
     .description {
