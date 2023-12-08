@@ -193,7 +193,7 @@ header {
     text-align: center;
 }
 
-.mobile .menu:hover {
+#mobile-nav:hover {
     top: 3rem;
     background-color:rgb(255, 254, 232);
     margin-left: -1rem;
@@ -250,6 +250,7 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+
     .content-block {
         margin: 3rem 0;
         width: 100%;
@@ -351,7 +352,6 @@ header {
 
     .intro p {
         width: 100%;
-        text-align: justify;
     }
     
     .description {
@@ -408,6 +408,7 @@ header {
 }
 
 @media only screen and (max-width: 1800px) {
+
     .aboutme {
         font-size: 1.2rem;
         text-align: justify;
@@ -496,35 +497,35 @@ header {
     opacity: .3;
 }
 
-#vba-logo {
+.vba-logo {
     width: 7rem;
     height: auto;
     margin-left: 23rem;
 }
 
-#tableau-logo {
+.tableau-logo {
     width: 9rem;
     height: auto;
     margin-left: 5rem;
 }
 
-#powerbi-logo {
+.powerbi-logo {
     width: 13rem;
     height: auto;
     margin-left: 4rem;
 }
 
-@media only screen and (max-width: 1600px) {
-    #vba-logo {
+/* @media only screen and (max-width: 1600px) {
+    .vba-logo {
         width: 6rem;
         margin-left: 27rem;
     }
 
-    #tableau-logo {
+    .tableau-logo {
         width: 8rem;
     }
 
-    #powerbi-logo {
+    .powerbi-logo {
         width: 12rem;
     }
 
@@ -537,21 +538,21 @@ header {
         left: 50rem;
         top: 144.6rem;
     }
-}
+} */
 
-@media only screen and (max-width: 1500px) {
-    #vba-logo {
+@media only screen and (max-width: 1800px) {
+    .vba-logo {
         width: 5rem;
         margin-left: 20rem;
         margin-bottom: 1rem;
     }
 
-    #tableau-logo {
+    .tableau-logo {
         width: 7rem;
         margin-bottom: 1rem;
     }
 
-    #powerbi-logo {
+    .powerbi-logo {
         width: 11rem;
         margin-bottom: 1rem;
     }
@@ -565,6 +566,28 @@ header {
         left: 50rem;
         top: 147.1rem;
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+#xp-skillset {
+    margin-top: -2rem;
+}
+
+.vba-logo {
+    margin-left: 5rem;
+}
+
+.tech {
+    left: -8rem;
+    top: 172.3rem;
+}
+
+.tech-one {
+    left: -35rem;
+    top: 80rem;
+}
+
 }
 
 /* projects */
@@ -632,7 +655,7 @@ header {
     opacity: .1;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1800px) {
     .projects {
         height: 42rem;
     }
@@ -645,6 +668,43 @@ header {
         width: 50rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .projects {
+        height: 46rem;
+    }
+
+    .projects .subheader {
+        margin-top: -2rem;
+        margin-bottom: -1rem;
+    }
+
+    .projects .subtitle {
+        text-align: left;
+        line-height: 2.5rem;
+    }
+
+    .tech-two {
+    left: -35rem;
+    top: 250rem;
+    }
+
+    .project-list {
+        padding: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .projects ol {
+        list-style-type:decimal;
+        line-height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .projects a {
+        text-decoration: underline;
+    }
+} 
 
 /* contact */
 
@@ -712,6 +772,37 @@ header {
     align-self: center;
 }
 
+@media only screen and (max-width: 600px) {
+
+    #contact-subheader {
+        display: block;
+    }
+
+    #contact-subheader .number {
+        margin-bottom: 2rem;
+    }
+
+    .contacts h3 {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contacts ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactinfo {
+        text-align: left;
+        font-size: .7rem;
+    }
+
+    .symbol {
+        width: 1.5rem;
+        margin-left: -2.5rem;
+    }
+}
+
 /* footer */
 
 footer {
@@ -720,4 +811,12 @@ footer {
     background-color:rgb(255, 254, 232);
     border-top: 2px dashed black;
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        position: relative;
+        top: 6.5rem;
+        height: 4.5rem;
+    }
 }

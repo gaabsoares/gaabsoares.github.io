@@ -1,3 +1,7 @@
+let mobileNavigation = document.getElementById('mobile-nav');
+
+mobileNavigation.onclick = '';
+
 // show/hide menu
 
 let menuButton = document.getElementById('show-menu');
