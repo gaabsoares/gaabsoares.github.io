@@ -584,27 +584,27 @@ header {
 
 @media only screen and (max-width: 600px) {
 
-.experience-description {
-    font-size: 1rem;
-}
+    .experience-description {
+        font-size: 1rem;
+    }
 
-#xp-skillset {
-    margin-top: -2rem;
-}
+    #xp-skillset {
+        margin-top: -2rem;
+    }
 
-.vba-logo {
-    margin-left: 5rem;
-}
+    .vba-logo {
+        margin-left: 5rem;
+    }
 
-.tech {
-    left: -8.5rem;
-    top: 154.6rem;
-}
+    .tech {
+        left: -8.5rem;
+        top: 154.6rem;
+    }
 
-.tech-one {
-    left: -40rem;
-    top: 80rem;
-}
+    .tech-one {
+        left: -40rem;
+        top: 80rem;
+    }
 
 }
 
@@ -665,6 +665,10 @@ header {
     display: none;
 }
 
+#project-six {
+    display: none;
+}
+
 .tech-two {
     width: 70rem;
     height: auto;
@@ -674,6 +678,7 @@ header {
 }
 
 @media only screen and (max-width: 1800px) {
+
     .projects {
         height: 42rem;
     }
@@ -837,6 +842,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    
     footer {
         height: 2rem;
         margin-top: 6rem;
