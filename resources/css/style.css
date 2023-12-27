@@ -669,6 +669,10 @@ header {
     display: none;
 }
 
+#project-seven {
+    display: none;
+}
+
 .tech-two {
     width: 70rem;
     height: auto;
