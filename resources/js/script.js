@@ -84,8 +84,13 @@ let projectSix = document.getElementById('project-six');
 let projectSixTitle = document.getElementById('project-six-title');
 
 let arrowEleven = document.getElementById('arrow-eleven');
+let arrowTwelve = document.getElementById('arrow-twelve');
 let projectSeven = document.getElementById('project-seven');
 let projectSevenTitle = document.getElementById('project-seven-title');
+
+let arrowThirteen = document.getElementById('arrow-thirteen');
+let projectEigth = document.getElementById('project-eigth');
+let projectEigthTitle = document.getElementById('project-eigth-title');
 
 
 // hiding elements
@@ -96,6 +101,7 @@ projectFourTitle.hidden = true;
 projectFiveTitle.hidden = true;
 projectSixTitle.hidden = true;
 projectSevenTitle.hidden = true;
+projectEigthTitle.hidden = true;
 
 // click functions
 
@@ -181,4 +187,18 @@ arrowEleven.onclick = () => {
     projectSeven.style.display = 'none';
     projectSixTitle.hidden = false;
     projectSevenTitle.hidden = true;
+}
+
+arrowTwelve.onclick = () => {
+    projectEigth.style.display = 'grid';
+    projectSeven.style.display = 'none';
+    projectSevenTitle.hidden = true;
+    projectEigthTitle.hidden = false;
+}
+
+arrowThirteen.onclick = () => {
+    projectSeven.style.display = 'grid';
+    projectEigth.style.display = 'none';
+    projectSevenTitle.hidden = false;
+    projectEigthTitle.hidden = true;
 }
